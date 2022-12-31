@@ -24,9 +24,11 @@ button {
     justify-content: center;
     align-items: center;
 }
-header{
+
+header {
     z-index: 3;
 }
+
 header nav {
     display: flex;
     align-items: center;
@@ -62,7 +64,12 @@ header nav {
     /* transition-duration: .5s; */
     /* height: 22px;
     width: 105px; */
+    transition: color .5s ease;
 }
+.nav-right ul li a:hover{
+    color: #FF2A4B ;
+}
+/* */
 
 .nav-right ul li:first-child a {
     font-weight: 500;
@@ -81,8 +88,17 @@ header nav {
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
     border-radius: 50px;
+    /* transition: background .5s ease; */
+    transition-duration:.5s ;
 }
 
+.nav-left a:hover{
+    background: linear-gradient(270deg, #FF2749 0%, #FF405F 100%);
+}
+.nav-left a:hover span{
+    color: #fff;
+
+}
 
 .nav-left a span {
     font-weight: 500;
@@ -93,9 +109,23 @@ header nav {
     color: #171D3F;
 }
 
+.team-s {
+    display: flex;
+    align-items: center;
+    /* margin-left: 50px; */
+    /* justify-content: center; */
+}
+
 .top-container {
     padding-top: 100px;
+    margin-bottom: 150px;
     position: relative;
+}
+
+.slider-outer {
+    background: rgba(23, 29, 63, 0.02);
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .top-container .left p:first-child {
@@ -140,6 +170,7 @@ header nav {
     border-radius: 50px;
     padding: 15px 30px;
     gap: 15px;
+    cursor: pointer;
 }
 
 .left-buttons button:first-child div {
@@ -170,6 +201,15 @@ header nav {
     text-align: center;
     letter-spacing: 0.02em;
     color: #313131;
+    cursor: pointer;
+}
+.left-buttons button:last-child:hover{
+    background: linear-gradient(270deg, #FF2749 0%, #FF405F 100%);
+    color: #fff;
+}
+
+.btn{
+    cursor: pointer;
 }
 
 .banner {
@@ -290,7 +330,9 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 102px;
+    gap: 50px;
+    width: 100%;
+    position: relative;
 }
 
 .magna-left {
@@ -310,12 +352,13 @@ header nav {
     color: #171D3F;
 }
 
-.magna-left p {
+.magna-left p.magna-para-top {
     max-width: 528px;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: #666666;
+    margin-bottom: 20px;
 }
 
 .magna-left .learn-more {
@@ -453,20 +496,23 @@ header nav {
 }
 
 .pricing-inner {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 0px 100px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 116px;
+    justify-content: center; */
+    /* gap: 116px; */
+    width: 100%;
 }
 
 .pricing-inner h1 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 100%;
-    /* text-align: center; */
+    text-align: center;
+    margin-bottom: 116px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 79px;
     color: #171D3F;
 }
 
@@ -481,22 +527,26 @@ header nav {
 .pricing-cards {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
 }
 
 .pricing-card {
-    padding: 50px 50px;
+    padding: 50px;
     background: #FFFFFF;
     box-shadow: 0px 15px 50px rgba(91, 132, 193, 0.1);
     border-radius: 10px;
+    flex: 1 1 362px;
     max-width: 362px;
     max-height: 508px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     transition: transform .5s ease;
+    position: relative;
+    padding-bottom: 110px;
 
 }
 
@@ -542,6 +592,14 @@ header nav {
     margin-top: 32px;
     transition: background .5s ease;
 
+
+}
+
+.btn-contt {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
 }
 
 /* --------------- Pricing card 3  ---------------- */
@@ -605,11 +663,15 @@ header nav {
     text-align: center;
 }
 
+.footer-inner h1 span {
+    display: block;
+}
+
 .footer-middle {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 50px;
     width: 100%;
 }
 
@@ -636,10 +698,10 @@ header nav {
 
 .footer-right-details {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     flex: 1 1 600px;
     max-width: 600px;
-    gap: 10px;
+    gap: 50px;
     justify-content: space-between;
 }
 
@@ -723,14 +785,106 @@ header nav {
     color: #FFFFFF;
 }
 
+.magna-left span {
+    display: block;
+}
+
+.faq-section {
+    background: rgba(23, 29, 63, 0.02);
+}
+
+
+.faq-top h1 {
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 50px;
+    color: #171D3F;
+}
+
+.faq-top h1 span {
+    background: linear-gradient(270deg, #FB654C 0%, #FCB120 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background-clip: text; */
+    /* text-fill-color: transparent; */
+}
+
+.faq {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 50px rgba(91, 132, 193, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    max-width: 706px;
+    margin: 30px auto;
+    padding: 40px;
+
+}
+
+.faq-head {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* margin-bottom: 10px; */
+    cursor: pointer;
+}
+
+.faq-para {
+    padding-left: 68px;
+    padding-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease;
+}
+
+.faq-head h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 147.9%;
+
+    color: #313131;
+}
+
+.faq-para p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 147.9%;
+    color: #313131;
+}
+
+.slider-image{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:1350px) {
+    .services-bottom {
+        gap: 100px;
+    }
+}
+
 @media(max-width:1349px) {
     .nav-right {
         gap: 70px;
+    }
+
+    .pricing-cards {
+        justify-content: center;
     }
 }
 
 
 @media(max-width:1300px) {
+    .magna-right img {
+        width: 400px;
+        height: 416px;
+    }
+
     .top-container .left p:first-child {
         font-size: 40px;
         line-height: 60px;
@@ -880,6 +1034,22 @@ header nav {
 
 }
 
+@media(max-width:1300px) {
+    .magna-right img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .pricing-container {
+        padding: 40px 0px;
+    }
+
+    .pricing-inner h1 {
+        margin-bottom: 60px;
+    }
+
+}
+
 @media(max-width:1100px) {
     .left-buttons {
         gap: 15px;
@@ -942,7 +1112,8 @@ header nav {
         box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.1);
         z-index: 4;
     }
-    header{
+
+    header {
         background-color: #fff;
     }
 
@@ -970,21 +1141,39 @@ header nav {
         box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.1);
     }
 
+    .services-top h1,
+    .pricing-inner h1,
+    .pricing-card p,
+    .footer-inner h1,.faq-top h1 {
+        font-size: 35px;
+        line-height: 1.5;
+    }
+
     .top-container .left p:first-child,
-    .top-container .left p span {
+    .top-container .left p span,
+    .magna-left h1,
+    .services-card h1 {
         font-size: 30px;
         line-height: 40px;
-
     }
 
     .top-container .left p:first-child {
         margin-bottom: 10px;
     }
 
+    .magna-left p.magna-para-top,
+    .services-top p,
+    .services-card p,.faq-para p {
+        font-size: 15px;
+    }
+
     .top-container .left p.left-text {
         font-size: 15px;
         max-width: 470px;
         margin-bottom: 25px;
+    }
+    .faq-head h1{
+        font-size: 15px;
     }
 
     .banner {
@@ -1049,10 +1238,22 @@ header nav {
         height: 60px;
     }
 }
+
 @media(max-width:900px) {
+    .magna-right img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .top-container {
+        margin-bottom: 100px;
+        position: relative;
+    }
+
     .left-buttons {
         gap: 10px;
     }
+
     .top-container .left p.left-text {
         font-size: 13px;
         max-width: 430px;
@@ -1122,8 +1323,15 @@ header nav {
     }
 }
 
-@media(max-width:800px){
-    header.max-width,.top-container.max-width {
+@media(max-width:800px) {
+
+
+    header.max-width,
+    .top-container.max-width,
+    .magna-inner,
+    .services-inner,
+    .pricing-inner,
+    .footer-inner,.faq-inner.max-width {
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -1133,6 +1341,13 @@ header nav {
         max-width: 430px;
         margin-bottom: 25px;
         line-height: 1.7;
+    }
+    .faq {
+        
+        max-width: 706px;
+        margin: 30px auto;
+        padding: 30px;
+    
     }
 
     .banner {
@@ -1171,6 +1386,11 @@ header nav {
         height: 35px;
     }
 
+    .magna-right img {
+        width: 200px;
+        height: 200px;
+    }
+
     .left-buttons button:first-child div {
         width: 20px;
         height: 20px;
@@ -1189,20 +1409,76 @@ header nav {
         padding: 7px 18px;
         font-size: 10px;
     }
-    .top-container{
-        margin-top: 70px;
+
+    .services-bottom .services-card {
+
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 60px;
+        padding-bottom: 45px;
+        gap: 17px;
     }
-    .top-container .left p.left-text {
+
+    .top-container {
+        margin-top: 70px;
+
+    }
+
+    .magna-left p.magna-para-top,
+    .services-card p {
+        font-size: 10px;
+        line-height: 1.7;
+
+    }
+
+    .top-container .left p.left-text,
+    .services-top p {
         font-size: 10px;
         max-width: 320px;
         margin-bottom: 20px;
         line-height: 1.7;
     }
+
+    .services-card img {
+        width: 150px;
+        height: 150px;
+        top: -65px;
+    }
+
+    /* .services-top p {
+        margin-top: 10px;
+    } */
+
     .top-container .left p:first-child,
-    .top-container .left p span {
+    .top-container .left p span,
+    .magna-left h1,
+    .services-card h1,
+    .pricing-card h1.pricing-head {
         font-size: 20px;
         line-height: 1.5;
 
+    }
+
+    .services-inner {
+        gap: 100px;
+    }
+
+    .services-top {
+        gap: 0px;
+    }
+
+    .services-top h1,
+    .pricing-inner h1,
+    .pricing-card p,
+    .footer-inner h1,.faq-top h1 {
+        font-size: 30px;
+        /* line-height: 79px; */
+        line-height: 2.3;
+        margin-bottom: 15px;
+    }
+
+    .footer-inner h1 {
+        line-height: 1.4;
     }
 
     .top-container .left p:first-child {
@@ -1216,6 +1492,10 @@ header nav {
         top: 40px;
     }
 
+    .pricing-card .icon-para div.para {
+        font-size: 12px;
+    }
+
     .top-absolute {
         width: auto;
         gap: 15px;
@@ -1227,7 +1507,9 @@ header nav {
         padding-right: 50px;
 
     }
-    .top-right img,.bottom-absolute img{
+
+    .top-right img,
+    .bottom-absolute img {
         width: 8px;
         height: 9px;
     }
@@ -1274,12 +1556,30 @@ header nav {
         width: 80px;
         height: 30px;
     }
+
+    .magna-left .learn-more {
+        gap: 10px;
+        align-items: center;
+    }
+
+    .magna-left .learn-more p {
+        font-size: 14px;
+    }
+
+    .magna-left .learn-more img {
+        width: 15px;
+        height: 15px;
+    }
 }
 
-@media(max-width:650px){
-    .bottom-absolute,.top-absolute,.line{
+@media(max-width:650px) {
+
+    .bottom-absolute,
+    .top-absolute,
+    .line {
         display: none;
     }
+
     .top-absolute {
         width: 150px;
         gap: 15px;
@@ -1291,7 +1591,8 @@ header nav {
         padding-right: 0px;
 
     }
-    .left-abs{
+
+    .left-abs {
         position: absolute;
         /* width: 100%; */
         text-align: center;
@@ -1299,7 +1600,8 @@ header nav {
         left: 0;
         right: 0;
     }
-    .left-text{
+
+    .left-text {
         position: absolute;
         top: 370px;
         left: 0;
@@ -1308,19 +1610,24 @@ header nav {
         width: auto;
         margin: 0 auto;
         font-size: 19px;
-        
+
         /* border: 1px solid red; */
     }
-    .left{
+
+    .left {
         /* border: 3px solid green; */
         width: 100%;
         /* position: relative; */
     }
-    .top-container{
-        /* border: 1px solid green; */
-        height: 100vh;
+
+    .top-container {
+
+        margin-bottom: 0px;
+        position: relative;
+        height: 35rem;
     }
-    .left-buttons{
+
+    .left-buttons {
         position: absolute;
         top: 450px;
         left: 0;
@@ -1328,15 +1635,21 @@ header nav {
         display: flex;
         justify-content: center;
     }
+
     .banner {
         width: 250px;
         height: 300px;
         top: 17rem;
         right: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
+    }
+    .faq-top h1{
+        padding-top: 50px;
+        line-height: 1.5;
     }
 }
+
 @media(max-width:600px) {
     /* .top-container .left p.left-text {
         font-size: 10px;
@@ -1348,6 +1661,75 @@ header nav {
         padding-left: 50px;
         padding-right: 50px;
     } */
+
+    .magna-container {
+
+        display: block;
+        /* border: 1px solid red; */
+    }
+
+    .magna-inner {
+        flex-direction: column;
+        padding-bottom: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    .magna-left div {
+        position: absolute;
+        bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+    }
+
+    .magna-left div p.magna-para-top {
+        max-width: auto;
+        padding: 0 30px;
+    }
+
+    .magna-left h1 {
+        text-align: center;
+    }
+    .faq-head h1{
+        font-size: 13px;
+    }
+    .faq-para p{
+        font-size: 12px;
+    }
+    .image[src='/images/colapsible-plus.png']{
+        width: 18px;
+        height: 18px;
+    }
+    .image[src='/images/colapsible-minus.png']{
+        width: 18px;
+    }
+    .faq-para {
+        padding-left: 58px;
+        padding-top: 10px;
+       
+    }
+   
+    .slider-image img{
+        width: 100px;
+        height: 20px;
+    }
+}
+
+@media(max-width:500px) {
+    .footer-inner h1 {
+        font-size: 20px;
+        width: 100%;
+    }
+    .faq-top h1{
+        font-size: 30px;
+    }
 }
 
 @media(max-width:450px) {
@@ -1358,5 +1740,69 @@ header nav {
 
     .nav-left.res a span {
         font-size: 14px;
+    }
+
+    .services-bottom .services-card {
+
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .services-bottom {
+        gap: 80px;
+    }
+
+    .pricing-card .btn {
+        font-size: 12px;
+        padding: 15px 40px;
+        margin-top: 32px;
+        transition: background .5s ease;
+    }
+    .faq-head{
+        gap: 20px;
+    }
+    .faq-head h1{
+        font-size: 12px;
+        
+    }
+    .faq-para p{
+        font-size: 10px;
+    }
+    .image[src='/images/colapsible-plus.png']{
+        width: 16px;
+        height: 16px;
+    }
+    .image[src='/images/colapsible-minus.png']{
+        width: 16px;
+    }
+    .faq-para {
+        padding-left: 38px;
+        padding-top: 10px;
+       
+    }
+    .faq {
+        
+        max-width: 706px;
+        margin: 20px auto;
+        padding: 20px;
+    
+    }
+    .faq-inner.max-width{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .faq-top h1{
+        font-size: 25px;
+    }
+
+}
+
+@media(max-width:400px) {
+    .pricing-inner {
+        padding-left: 30px;
+        padding-right: 30px;
+
     }
 }
