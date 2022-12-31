@@ -164,7 +164,7 @@ header nav {
     gap: 30px;
 }
 
-.left-buttons button:first-child {
+.left-buttons button {
     background: linear-gradient(270deg, #FF2749 0%, #FF405F 100%);
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
     border-radius: 50px;
@@ -173,14 +173,14 @@ header nav {
     cursor: pointer;
 }
 
-.left-buttons button:first-child div {
+.left-buttons button div {
     width: 30px;
     height: 30px;
     background: #171D3F;
     border-radius: 50%;
 }
 
-.left-buttons button:first-child span {
+.left-buttons button span {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -190,23 +190,6 @@ header nav {
     color: #FFFFFF;
 }
 
-.left-buttons button:last-child {
-    background: #FFFFFF;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-    border-radius: 50px;
-    padding: 19px 30px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #313131;
-    cursor: pointer;
-}
-.left-buttons button:last-child:hover{
-    background: linear-gradient(270deg, #FF2749 0%, #FF405F 100%);
-    color: #fff;
-}
 
 .btn{
     cursor: pointer;
@@ -530,7 +513,7 @@ header nav {
     /* align-items: center; */
     justify-content: space-between;
     width: 100%;
-    gap: 30px;
+    gap: 50px;
 }
 
 .pricing-card {
@@ -720,12 +703,17 @@ header nav {
     color: #FFFFFF;
 }
 
-.links p {
+.links a,.company a,.getInTouch a  {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    transition: color .5s ease;
+}
+.links a:hover,.company a:hover,.getInTouch a:hover{
+    color: #FB654C;
+    cursor: pointer;
 }
 
 .company {
@@ -744,13 +732,7 @@ header nav {
     color: #FFFFFF;
 }
 
-.company p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-}
+
 
 .getInTouch {
     display: flex;
@@ -768,13 +750,7 @@ header nav {
     color: #FFFFFF;
 }
 
-.getInTouch p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-}
+
 
 .footer-inner p {
     font-weight: 400;
@@ -906,31 +882,28 @@ header nav {
         gap: 20px;
     }
 
-    .left-buttons button:first-child {
+    .left-buttons button {
         padding: 5px 20px;
         gap: 10px;
         line-height: 10px;
         height: 50px;
     }
 
-    .left-buttons button:first-child div {
+    .left-buttons button div {
         width: 25px;
         height: 25px;
     }
 
-    .left-buttons button:first-child img {
+    .left-buttons button img {
         width: 13px;
         height: 13px;
     }
 
-    .left-buttons button:first-child span {
+    .left-buttons button span {
         font-size: 15px;
     }
 
-    .left-buttons button:last-child {
-        padding: 15px 30px;
-        font-size: 16px;
-    }
+
 
     .banner {
         width: 500px;
@@ -1051,33 +1024,28 @@ header nav {
 }
 
 @media(max-width:1100px) {
-    .left-buttons {
+    /* .left-buttons {
         gap: 15px;
-    }
+    } */
 
-    .left-buttons button:first-child {
+    .left-buttons button {
         padding: 5px 15px;
         gap: 7px;
         height: 40px;
     }
 
-    .left-buttons button:first-child div {
+    .left-buttons button div {
         width: 20px;
         height: 20px;
     }
 
-    .left-buttons button:first-child img {
+    .left-buttons button img {
         width: 10px;
         height: 10px;
     }
 
-    .left-buttons button:first-child span {
+    .left-buttons button span {
         font-size: 12px;
-    }
-
-    .left-buttons button:last-child {
-        padding: 10px 20px;
-        font-size: 13px;
     }
 
     .top-container {
@@ -1239,6 +1207,14 @@ header nav {
     }
 }
 
+@media(max-width:1060px){
+    .footer-middle{
+        justify-content: center;
+    }
+    .footer-logo-detail{
+        gap: 30px;
+    }
+}
 @media(max-width:900px) {
     .magna-right img {
         width: 250px;
@@ -1380,7 +1356,13 @@ header nav {
 }
 
 @media(max-width:750px) {
-    .left-buttons button:first-child {
+    .services-container {
+       
+        padding-top: 30px;
+        padding-bottom: 60px;
+      
+    }
+    .left-buttons button {
         padding: 5px 13px;
         gap: 7px;
         height: 35px;
@@ -1391,17 +1373,17 @@ header nav {
         height: 200px;
     }
 
-    .left-buttons button:first-child div {
+    .left-buttons button div {
         width: 20px;
         height: 20px;
     }
 
-    /* .left-buttons button:first-child img {
+    /* .left-buttons button img {
         width: 10px;
         height: 10px;
     } */
 
-    .left-buttons button:first-child span {
+    .left-buttons button span {
         font-size: 10px;
     }
 
@@ -1460,7 +1442,7 @@ header nav {
     }
 
     .services-inner {
-        gap: 100px;
+        gap: 60px;
     }
 
     .services-top {
@@ -1468,7 +1450,6 @@ header nav {
     }
 
     .services-top h1,
-    .pricing-inner h1,
     .pricing-card p,
     .footer-inner h1,.faq-top h1 {
         font-size: 30px;
@@ -1476,7 +1457,11 @@ header nav {
         line-height: 2.3;
         margin-bottom: 15px;
     }
-
+    .pricing-inner h1{
+        margin-bottom: 30px;
+        line-height: 2.3;
+        font-size: 30px;
+    }
     .footer-inner h1 {
         line-height: 1.4;
     }
@@ -1574,6 +1559,10 @@ header nav {
 
 @media(max-width:650px) {
 
+    .slider-outer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .bottom-absolute,
     .top-absolute,
     .line {
@@ -1733,6 +1722,10 @@ header nav {
 }
 
 @media(max-width:450px) {
+    .services-inner {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
     .nav-left.res a {
         gap: 10px;
         padding: 10px 20px;

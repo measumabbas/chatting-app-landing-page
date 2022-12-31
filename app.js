@@ -1,6 +1,7 @@
 const ham = document.getElementById('ham')
 const nav = document.getElementById('my-nav')
 const close = document.getElementById('close')
+const links = document.querySelectorAll('.link')
 ham.addEventListener('click',()=>{
     nav.style.top='0'
 })
@@ -38,5 +39,11 @@ heads.forEach((head,index)=>{
                 images[i].src='/images/colapsible-plus.png'
             }
         })
+    })
+})
+
+links.forEach((link)=>{
+    link.addEventListener('click',()=>{
+        nav.style.top='-1000px'
     })
 })
