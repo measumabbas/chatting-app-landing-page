@@ -273,6 +273,456 @@ header nav {
 }
 
 
+
+
+/* -------------- Manga Container ------------- */
+
+.magna-container {
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.magna-inner {
+    max-width: 1440px;
+    padding: 45px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 102px;
+}
+
+.magna-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    /* align-items: center; */
+
+}
+
+.magna-left h1 {
+    max-width: 528px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    color: #171D3F;
+}
+
+.magna-left p {
+    max-width: 528px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #666666;
+}
+
+.magna-left .learn-more {
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+    max-width: 145px;
+}
+
+.magna-left .learn-more p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #171D3F;
+
+}
+
+.magna-right img {
+    width: 555px;
+    height: 516px;
+}
+
+/* ----------- Services Container ------------ */
+
+.services-container {
+    background-color: #FAFAFB;
+    padding-top: 70px;
+    padding-bottom: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-inner {
+    max-width: 1440px;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+}
+
+.services-top {
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.services-top h1 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 79px;
+    color: #171D3F;
+}
+
+.services-top h1 span {
+    background: linear-gradient(270deg, #FB654C 0%, #FCB120 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background-clip: text; */
+    /* text-fill-color: transparent; */
+}
+
+.services-top p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #666666;
+}
+
+.services-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.services-bottom .services-card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 15px 50px rgba(91, 132, 193, 0.1);
+    border-radius: 10px;
+    position: relative;
+    max-width: 560px;
+    padding-left: 52px;
+    padding-right: 57px;
+    padding-top: 82px;
+    padding-bottom: 55px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.services-card img {
+    position: absolute;
+    top: -90px;
+    left: 0;
+
+}
+
+.services-card h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #2E2D56;
+}
+
+.services-card p {
+    max-width: 451px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #666666;
+}
+
+/* ----------- Our Pricing Section ---------------- */
+
+.pricing-container {
+    background: #FFFFFF;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-inner {
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 116px;
+}
+
+.pricing-inner h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    /* text-align: center; */
+    color: #171D3F;
+}
+
+.pricing-inner h1 span {
+    background: linear-gradient(270deg, #FB654C 0%, #FCB120 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background-clip: text; */
+    /* text-fill-color: transparent; */
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pricing-card {
+    padding: 50px 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 50px rgba(91, 132, 193, 0.1);
+    border-radius: 10px;
+    max-width: 362px;
+    max-height: 508px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform .5s ease;
+
+}
+
+.pricing-card h1 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    color: #171D3F;
+
+}
+
+.pricing-card p {
+    margin-bottom: 47px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #313131;
+}
+
+.pricing-card .icon-para {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.pricing-card .icon-para .para {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #313131;
+}
+
+.pricing-card .btn {
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    padding: 19px 81px;
+    margin-top: 32px;
+    transition: background .5s ease;
+
+}
+
+/* --------------- Pricing card 3  ---------------- */
+
+.pricing-card3 {
+    margin-left: 14px;
+}
+
+.pricing-card3 h1 {
+    margin-bottom: 49px;
+}
+
+.pricing-card3 p {
+    margin-bottom: 57px;
+}
+
+.pricing-card3 .btn {
+    margin-top: 68px;
+}
+
+/* ------------- Pricing Cards hover -------------- */
+
+.pricing-card .btn:hover {
+    background: linear-gradient(270deg, #FB654C 0%, #FCB120 100%);
+    /* background: rgb(251,101,76); */
+    color: white;
+}
+
+.pricing-card:hover {
+    /* position: relative;
+    bottom: 30px; */
+    transform: translateY(-30px);
+}
+
+/* ------------------ Footer ------------------ */
+
+.footer-section {
+    background: #171D3F;
+}
+
+.footer-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 100px;
+    padding-top: 68px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 81px;
+}
+
+.footer-inner h1 {
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 597px;
+    text-align: center;
+}
+
+.footer-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.footer-logo-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1 1 210px;
+    max-width: 210px;
+}
+
+.footer-logo-detail img {
+    width: 55px;
+    height: 55px;
+}
+
+.footer-logo-detail p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.footer-right-details {
+    display: flex;
+    flex-wrap: wrap; 
+    flex: 1 1 600px;
+    max-width: 600px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    flex: 1 1 82px;
+    max-width: 82px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.links h2 {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.links p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 125px;
+    max-width: 125px;
+    gap: 24px;
+}
+
+.company h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.company p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.getInTouch {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 116px;
+    max-width: 116px;
+    gap: 24px;
+}
+
+.getInTouch h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.getInTouch p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.footer-inner p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+}
+
 @media(max-width:1349px) {
     .nav-right {
         gap: 70px;
