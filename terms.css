@@ -1,0 +1,114 @@
+.terms h1 span {
+    background: linear-gradient(270deg, #FF2749 0%, #FF405F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.terms h1 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 79px;
+    /* identical to box height, or 146% */
+
+    text-align: center;
+    margin: 60px 0px;
+    margin-top: 40px;
+}
+
+.terms {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 150px;
+}
+
+.head,
+.para-body span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #171D3F;
+}
+
+.head,
+.para-body {
+    margin-bottom: 20px;
+}
+
+.para-body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #666666;
+}
+@media(max-width:1200px){
+    .terms{
+        margin-top: 130px;
+    }
+}
+
+@media(max-width:1100px) {
+    .terms {
+        margin-top: 130px;
+    }
+}
+
+@media(max-width:1000px) {
+    .terms {
+
+        padding: 0 100px;
+    }
+}
+
+@media(max-width:900px) {
+    .terms h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:800px) {
+    .terms {
+
+        padding: 0 50px;
+    }
+}
+
+@media(max-width:600px) {
+    .terms h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .terms {
+        margin-top: 110px;
+    }
+
+    .para-body {
+        text-align: justify;
+    }
+}
+
+@media(max-width:450px) {
+    .terms h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .para-body {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .head,
+    .para-body span {
+        font-size: 14px;
+        line-height: 30px;
+        color: #171D3F;
+    }
+}
+@media(max-width:400px){
+    .terms {
+        padding: 0 30px;
+    }
+}
